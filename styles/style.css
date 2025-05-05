@@ -1,41 +1,36 @@
 html {
-  /* px means "pixels". The base font size is now 10 pixels high */
-  font-size: 10px;
-  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
-  font-family: "Roboto", sans-serif;
-
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
 }
+
 h1 {
   font-size: 60px;
   text-align: center;
 }
 
 p,
-li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
+
 html {
-  background-color: #00539f;
+  background-color: #FFE08A;
 }
 body {
-  width: 600px;
+  max-width: 100%;
   margin: 0 auto;
-  background-color: #ff9500;
+  background-color: #FFE08A;
+  text-align: center;
   padding: 0 20px 20px 20px;
-  border: 5px solid black;
 }
 h1 {
   margin: 0;
-  padding: 20px 0;
-  color: #00539f;
-  text-shadow: 3px 3px 1px black;
+  text-align: center;
+  padding: 10px 0;
+  color: #000000;
 }
 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 900px;
+  height: 900px;
 }
 .done {
   color: darkseagreen;

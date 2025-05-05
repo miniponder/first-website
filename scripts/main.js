@@ -2,10 +2,10 @@ const myImage = document.querySelector("img");
 
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/firefox-logo.png") {
-    myImage.setAttribute("src", "images/old-firefox-logo.png");
+  if (mySrc === "images/flow-cat-oscar.png") {
+    myImage.setAttribute("src", "images/flow-cat-oscar-mirrored.png");
   } else {
-    myImage.setAttribute("src", "images/firefox-logo.png");
+    myImage.setAttribute("src", "images/flow-cat-oscar.png");
   }
 });
 let myButton = document.querySelector("button");
@@ -16,7 +16,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    myHeading.textContent = `Hello there, ${myName}!`;
   }
 }
 
@@ -24,7 +24,7 @@ if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  myHeading.textContent = `Hello there, ${storedName}!`;
 }
 myButton.addEventListener("click", () => {
   setUserName();
